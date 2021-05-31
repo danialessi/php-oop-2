@@ -65,9 +65,13 @@
 
                 <div> <strong>Prodotto: </strong>
                     <?php foreach($user->items as $item) {?>
-                        <?php echo $item->marca?>
-                        <?php echo $item->modello?>
-                        <?php echo $item->prezzo?>
+                        <ul>
+                            <li><strong>Tipologia: </strong><?php echo $item->tipologia?></li>
+                            <li><strong>Marca: </strong><?php echo $item->marca?></li>
+                            <li><strong>Modello: </strong><?php echo $item->modello?></li>
+                            <li><strong>Prezzo: </strong><?php echo $item->prezzo?></li>
+                        </ul>
+                        
                     <?php } ?>
                 </div>
             
