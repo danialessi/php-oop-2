@@ -3,11 +3,13 @@
         public $tipologia;
         public $marca;
         public $modello;
+        public $prezzo;
 
-        public function __construct($tipologia, $marca, $modello) {
+        public function __construct($tipologia, $marca, $modello, $prezzo) {
             $this->tipologia = $tipologia;
             $this->marca = $marca;
             $this->modello = $modello;
+            $this->prezzo = $prezzo;
         }
 
         //con questa funzione inserisco in un array i vari parametri dell'oggetto per poterli stampare più facilmente in pagina
@@ -15,7 +17,8 @@
             return [
                 'tipologia' => $this->tipologia,
                 'marca' => $this->marca,
-                'modello' => $this->modello
+                'modello' => $this->modello,
+                'prezzo' => $this->prezzo
             ];
         }
     }
